@@ -28,3 +28,10 @@ const aff = getFctMessage('Bonjour');
 const resultat: string = aff();
 
 console.log(resultat);
+type T_S_S = (s: string) => string;
+
+const prefixeS: T_S_S = (str: string): string => {
+  return `"//"${str}`;
+};
+const res: string = prefixeS("voici");
+console.log(res);
